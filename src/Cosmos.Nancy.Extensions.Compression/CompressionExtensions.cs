@@ -4,13 +4,25 @@ using Nancy.Bootstrapper;
 
 namespace Cosmos.Nancy.Extensions.Compression
 {
+    /// <summary>
+    /// Compression extensions
+    /// </summary>
     public static class CompressionExtensions
     {
+        /// <summary>
+        /// Use Compression Module
+        /// </summary>
+        /// <param name="pipelines"></param>
         public static void UseCompression(this IPipelines pipelines)
         {
             UseCompression(pipelines, null);
         }
 
+        /// <summary>
+        /// Use Compression Module
+        /// </summary>
+        /// <param name="pipelines"></param>
+        /// <param name="optionAction"></param>
         public static void UseCompression(this IPipelines pipelines, Action<CompressionOptions> optionAction)
         {
             var options = new CompressionOptions();
@@ -18,13 +30,13 @@ namespace Cosmos.Nancy.Extensions.Compression
 
             if (options.CompressionScheme == CompressionScheme.Gzip)
             {
-                GzipCompression.Settings = new CompressionSettings(options);
+                GzipCompression.Options = options;
                 pipelines.AfterRequest += GzipCompression.CheckForCompression;
             }
 
             if (options.CompressionScheme == CompressionScheme.Deflate)
             {
-                DeflateCompression.Settings = new CompressionSettings(options);
+                DeflateCompression.Options = options;
                 pipelines.AfterRequest += DeflateCompression.CheckForCompression;
             }
         }

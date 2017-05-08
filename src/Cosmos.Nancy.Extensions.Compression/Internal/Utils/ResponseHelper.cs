@@ -7,37 +7,37 @@ namespace Cosmos.Nancy.Extensions.Compression.Internal.Utils
 {
     internal static class ResponseHelper
     {
-        internal static bool IsCompatibleMimeType(Response response, CompressionSettings settings)
+        internal static bool IsCompatibleMimeType(Response response, CompressionOptions options)
         {
             if (response == null)
             {
                 throw new ArgumentNullException(nameof(response));
             }
 
-            if (settings == null)
+            if (options == null)
             {
-                throw new ArgumentNullException(nameof(settings));
+                throw new ArgumentNullException(nameof(options));
             }
 
-            return settings.MimeTypes.Any(x => x == response.ContentType || response.ContentType.StartsWith($"{x};"));
+            return options.MimeTypes.Any(x => x == response.ContentType || response.ContentType.StartsWith($"{x};"));
         }
 
-        internal static bool ContentLengthIsTooSmall(Response response, CompressionSettings settings)
+        internal static bool ContentLengthIsTooSmall(Response response, CompressionOptions options)
         {
             if (response == null)
             {
                 throw new ArgumentNullException(nameof(response));
             }
 
-            if (settings == null)
+            if (options == null)
             {
-                throw new ArgumentNullException(nameof(settings));
+                throw new ArgumentNullException(nameof(options));
             }
 
             if (response.Headers.TryGetValue("Content-Length", out string contentLength))
             {
                 var length = long.Parse(contentLength);
-                if (length < settings.MinimumBytes)
+                if (length < options.MinimumBytes)
                 {
                     return true;
                 }

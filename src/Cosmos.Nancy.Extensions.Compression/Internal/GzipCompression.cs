@@ -5,7 +5,7 @@ namespace Cosmos.Nancy.Extensions.Compression.Internal
 {
     internal static class GzipCompression
     {
-        internal static CompressionSettings Settings { get; set; }
+        internal static CompressionOptions Options { get; set; }
 
         internal static void CheckForCompression(NancyContext context)
         {
@@ -19,12 +19,12 @@ namespace Cosmos.Nancy.Extensions.Compression.Internal
                 return;
             }
 
-            if (!ResponseHelper.IsCompatibleMimeType(context.Response, settings: Settings))
+            if (!ResponseHelper.IsCompatibleMimeType(context.Response, options: Options))
             {
                 return;
             }
 
-            if (ResponseHelper.ContentLengthIsTooSmall(context.Response, settings: Settings))
+            if (ResponseHelper.ContentLengthIsTooSmall(context.Response, options: Options))
             {
                 return;
             }
