@@ -5,8 +5,18 @@ namespace Cosmos.Nancy.Extensions.Compression
     /// <summary>
     /// Compression settingss
     /// </summary>
-    public class CompressionSettings
+    internal class CompressionSettings
     {
+        private CompressionSettings() { }
+        public CompressionSettings(CompressionOptions options)
+        {
+            if (options != null)
+            {
+                MinimumBytes = options.MinimumBytes;
+                MimeTypes = options.MimeTypes;
+            }
+        }
+
         /// <summary>
         /// minimum bytes
         /// </summary>

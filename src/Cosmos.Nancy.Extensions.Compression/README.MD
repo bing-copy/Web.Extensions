@@ -11,8 +11,8 @@ public class Bootstrapper : DefaultNancyBootstrapper
 {
     protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
     {
-        // Enable Compression with Default Settings
-        pipelines.EnableGzipCompression();
+        // Use Compression with Default Settings
+        pipelines.UseCompression(options => options.CompressionScheme = CompressionScheme.Gzip);
 
         base.ApplicationStartup(container, pipelines);
     }
@@ -20,7 +20,7 @@ public class Bootstrapper : DefaultNancyBootstrapper
 ```
 
 
-## Settings
+## Options
 
 There are only two setings in which you can configure
 
@@ -49,12 +49,26 @@ public class Bootstrapper : DefaultNancyBootstrapper
     protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
     {
         // Enable Compression with Settings
-        var settings = new CompressionSettings();
-        settings.MinimumBytes = 1024;
-        settings.MimeTypes.Add("application/vnd.myexample");
-        pipelines.EnableGzipCompression(settings);
+        pipelines.UseCompression(options =>
+        {
+            options.MinimumBytes = 1024;
+            options.MimeTypes.Add("application/vnd.myexample");
+            options.CompressionScheme = CompressionScheme.Gzip;
+        });
 
         base.ApplicationStartup(container, pipelines);
+    }
+}
+```
+
+```c#
+public class Bootstrapper : AutofacNancyBootstrapper
+{
+    protected override void ApplicationStartup(ILifetimeScope container, IPipelines pipelines)
+    {
+       pipelines.UseCompression(options => options.CompressionScheme = CompressionScheme.Gzip);
+
+       base.ApplicationStartup(container, pipelines);
     }
 }
 ```
