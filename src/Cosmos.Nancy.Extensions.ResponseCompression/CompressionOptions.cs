@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Cosmos.Nancy.Extensions.Compression
+namespace Cosmos.Nancy.Extensions
 {
     /// <summary>
     /// Compression options

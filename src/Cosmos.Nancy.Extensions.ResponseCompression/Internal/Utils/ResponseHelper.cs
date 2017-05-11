@@ -3,7 +3,7 @@ using System.IO.Compression;
 using System.Linq;
 using Nancy;
 
-namespace Cosmos.Nancy.Extensions.Compression.Internal.Utils
+namespace Cosmos.Nancy.Extensions.Internal.Utils
 {
     internal static class ResponseHelper
     {

@@ -1,8 +1,8 @@
 ﻿using Nancy;
-using Cosmos.Nancy.Extensions.Compression.Internal.Utils;
+using Cosmos.Nancy.Extensions.Internal.Utils;
 
 
-namespace Cosmos.Nancy.Extensions.Compression.Internal
+namespace Cosmos.Nancy.Extensions.Internal
 {
     internal static class DeflateCompression
     {

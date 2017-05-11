@@ -6,13 +6,14 @@
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
     <AssemblyVersion>0.0.1</AssemblyVersion>
-    <Version>0.0.1-alpha1-10200</Version>
+    <Version>0.0.1-alpha1-10220</Version>
     <Authors>AlexLEWIS</Authors>
     <Company>StarrySky Foundation</Company>
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cosmosprogramme/nancy.extensions</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <FileVersion>0.0.1.0</FileVersion>
+    <RootNamespace>Cosmos.Nancy.Extensions</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

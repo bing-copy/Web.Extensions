@@ -1,4 +1,4 @@
-﻿namespace Cosmos.Nancy.Extensions.Compression
+﻿namespace Cosmos.Nancy.Extensions
 {
     /// <summary>
     /// compression scheme

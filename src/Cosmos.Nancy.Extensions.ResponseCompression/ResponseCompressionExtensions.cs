@@ -1,21 +1,21 @@
 ﻿using System;
-using Cosmos.Nancy.Extensions.Compression.Internal;
+using Cosmos.Nancy.Extensions.Internal;
 using Nancy.Bootstrapper;
 
-namespace Cosmos.Nancy.Extensions.Compression
+namespace Cosmos.Nancy.Extensions
 {
     /// <summary>
-    /// Compression extensions
+    /// Response compression extensions
     /// </summary>
-    public static class CompressionExtensions
+    public static class ResponseCompressionExtensions
     {
         /// <summary>
         /// Use Compression Module
         /// </summary>
         /// <param name="pipelines"></param>
-        public static void UseCompression(this IPipelines pipelines)
+        public static void UseResponseCompression(this IPipelines pipelines)
         {
-            UseCompression(pipelines, null);
+            UseResponseCompression(pipelines, null);
         }
 
         /// <summary>
@@ -23,8 +23,13 @@ namespace Cosmos.Nancy.Extensions.Compression
         /// </summary>
         /// <param name="pipelines"></param>
         /// <param name="optionAction"></param>
-        public static void UseCompression(this IPipelines pipelines, Action<CompressionOptions> optionAction)
+        public static void UseResponseCompression(this IPipelines pipelines, Action<CompressionOptions> optionAction)
         {
+            if(pipelines == null)
+            {
+                throw new ArgumentNullException(nameof(pipelines));
+            }
+
             var options = new CompressionOptions();
             optionAction?.Invoke(options);
 

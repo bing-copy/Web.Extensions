@@ -1,4 +1,4 @@
-﻿# Cosmos.Nancy.Extensions.Compression
+﻿# Cosmos.Nancy.Extensions.ResponseCompression
 
 迁移自 [Nancy.Gzip](https://github.com/dcomartin/Nancy.Gzip) 
 
@@ -6,13 +6,13 @@
 
 Enable gzip compression in your bootstrapper.
 
-```C#
+```c#
 public class Bootstrapper : DefaultNancyBootstrapper
 {
     protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
     {
         // Use Compression with Default Settings
-        pipelines.UseCompression(options => options.CompressionScheme = CompressionScheme.Gzip);
+        pipelines.UseResponseCompression(options => options.CompressionScheme = CompressionScheme.Gzip);
 
         base.ApplicationStartup(container, pipelines);
     }
@@ -43,13 +43,14 @@ The defaults are:
 * application/atom+xml
 
 ### Settings Example 
-```C#
+
+```c#
 public class Bootstrapper : DefaultNancyBootstrapper
 {
     protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
     {
         // Enable Compression with Settings
-        pipelines.UseCompression(options =>
+        pipelines.UseResponseCompression(options =>
         {
             options.MinimumBytes = 1024;
             options.MimeTypes.Add("application/vnd.myexample");
@@ -66,7 +67,7 @@ public class Bootstrapper : AutofacNancyBootstrapper
 {
     protected override void ApplicationStartup(ILifetimeScope container, IPipelines pipelines)
     {
-       pipelines.UseCompression(options => options.CompressionScheme = CompressionScheme.Gzip);
+       pipelines.UseResponseCompression(options => options.CompressionScheme = CompressionScheme.Gzip);
 
        base.ApplicationStartup(container, pipelines);
     }
