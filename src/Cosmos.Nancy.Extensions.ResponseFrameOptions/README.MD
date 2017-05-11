@@ -1,0 +1,2 @@
+# Cosmos.Nancy.Extensions.ResponseFrameOptions
+

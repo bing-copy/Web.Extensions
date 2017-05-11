@@ -7,7 +7,10 @@ for /R "packages" %%s in (*) do (
     del %%s
 )
 
-dotnet pack src/Cosmos.Nancy.Extensions.Compression -c Release -o ../../packages
+dotnet pack src/Cosmos.Nancy.Extensions.Alipay -c Release -o ../../packages
+dotnet pack src/Cosmos.Nancy.Extensions.WeChat -c Release -o ../../packages
+dotnet pack src/Cosmos.Nancy.Extensions.ResponseCompression -c Release -o ../../packages
+dotnet pack src/Cosmos.Nancy.Extensions.ResponseFrameOptions -c Release -o ../../packages
 
 for /R "packages" %%s in (*symbols.nupkg) do (
     del %%s
