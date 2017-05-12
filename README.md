@@ -2,4 +2,7 @@
 
 Include
 
-+ [Cosmos.Nancy.Extensions.Compression](src/Cosmos.Nancy.Extensions.Compression/README.MD)
++ [Cosmos.Nancy.Extensions.Alipay](src/Cosmos.Nancy.Extensions.Alipay/README.MD)
++ [Cosmos.Nancy.Extensions.WeChat](src/Cosmos.Nancy.Extensions.WeChat/README.MD)
++ [Cosmos.Nancy.Extensions.ResponseCompression](src/Cosmos.Nancy.Extensions.ResponseCompression/README.MD)
++ [Cosmos.Nancy.Extensions.ResponseFrameOptions](src/Cosmos.Nancy.Extensions.ResponseFrameOptions/README.MD)
