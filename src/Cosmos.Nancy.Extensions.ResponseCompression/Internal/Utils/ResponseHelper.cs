@@ -34,7 +34,7 @@ namespace Cosmos.Nancy.Extensions.Internal.Utils
                 throw new ArgumentNullException(nameof(options));
             }
 
-            if (response.Headers.TryGetValue("Content-Length", out string contentLength))
+            if (response.Headers.TryGetValue(CompressionConstants.ContentLength, out string contentLength))
             {
                 var length = long.Parse(contentLength);
                 if (length < options.MinimumBytes)
@@ -47,7 +47,7 @@ namespace Cosmos.Nancy.Extensions.Internal.Utils
 
         internal static void CompressGzipResponse(Response response)
         {
-            response.Headers["Content-Encoding"] = "gzip";
+            response.Headers[CompressionConstants.ContentEncoding] = CompressionConstants.Gzip;
 
             var contents = response.Contents;
             response.Contents = responseStream =>
@@ -61,7 +61,7 @@ namespace Cosmos.Nancy.Extensions.Internal.Utils
 
         internal static void CompressDeflateResponse(Response response)
         {
-            response.Headers["Content-Encoding"] = "deflate";
+            response.Headers[CompressionConstants.ContentEncoding] = CompressionConstants.Deflate;
 
             var contents = response.Contents;
             response.Contents = responseStream =>

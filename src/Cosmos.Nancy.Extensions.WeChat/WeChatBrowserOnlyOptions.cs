@@ -1,4 +1,5 @@
-﻿using Nancy;
+﻿using Cosmos.Nancy.Extensions.Internal;
+using Nancy;
 
 namespace Cosmos.Nancy.Extensions
 {
@@ -10,7 +11,7 @@ namespace Cosmos.Nancy.Extensions
         /// <summary>
         /// 提示消息
         /// </summary>
-        public string Message { get; set; } = "WeChat Browser Only";
+        public string Message { get; set; } = WeChatConstants.WeChatBrowserOnly;
 
         /// <summary>
         /// 302 跳转目标

@@ -15,22 +15,22 @@ namespace Cosmos.Nancy.Extensions.Internal
             {
                 case ResponseFramesOptionsType.DENY:
                     {
-                        return response.WithHeader("X-Frames-Options", "DENY");
+                        return response.WithHeader(FrameOptionsConstants.XFramesOptions, FrameOptionsConstants.DenyFrames);
                     }
 
                 case ResponseFramesOptionsType.SAMEORIGIN:
                     {
-                        return response.WithHeader("X-Frames-Options", "SAMEORIGIN");
+                        return response.WithHeader(FrameOptionsConstants.XFramesOptions, FrameOptionsConstants.SameOriginFrames);
                     }
 
                 case ResponseFramesOptionsType.ALLOWFROM when !string.IsNullOrWhiteSpace(domain):
                     {
-                        return response.WithHeader("X-Frames-Options", $"ALLOW-FROM {domain}");
+                        return response.WithHeader(FrameOptionsConstants.XFramesOptions, $"{FrameOptionsConstants.AllowFrom} {domain}");
                     }
 
                 default:
                     {
-                        return response.WithHeader("X-Frames-Options", "DENY");
+                        return response.WithHeader(FrameOptionsConstants.XFramesOptions, FrameOptionsConstants.DenyFrames);
                     }
             }
         }

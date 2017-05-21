@@ -8,7 +8,7 @@ namespace Cosmos.Nancy.Extensions.Internal
     {
         private static string GetUserAgent(Request request) => request.Headers.UserAgent;
 
-        private static readonly Regex RegexRule = new Regex(@"MicroMessenger", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        private static readonly Regex RegexRule = new Regex(WeChatConstants.WeChatBrowserIdentity, RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         public static bool IsWeChatBrowser(Request request)
         {
