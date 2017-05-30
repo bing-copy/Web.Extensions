@@ -15,7 +15,7 @@ namespace Cosmos.Nancy.Extensions
         /// <returns></returns>
         public static Response WithResponseFrameOptions(this Response response)
         {
-            return WithResponseFrameOptions(response, ResponseFramesOptionsType.DENY, string.Empty);
+            return WithResponseFrameOptions(response, ResponseFrameOptionsType.DENY, string.Empty);
         }
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace Cosmos.Nancy.Extensions
         /// <param name="response"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public static Response WithResponseFrameOptions(this Response response, ResponseFramesOptionsType type)
+        public static Response WithResponseFrameOptions(this Response response, ResponseFrameOptionsType type)
         {
             return WithResponseFrameOptions(response, type, string.Empty);
         }
@@ -36,7 +36,7 @@ namespace Cosmos.Nancy.Extensions
         /// <param name="type"></param>
         /// <param name="domain"></param>
         /// <returns></returns>
-        public static Response WithResponseFrameOptions(this Response response, ResponseFramesOptionsType type, string domain)
+        public static Response WithResponseFrameOptions(this Response response, ResponseFrameOptionsType type, string domain)
         {
             if(response == null)
             {

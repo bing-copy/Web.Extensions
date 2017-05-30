@@ -7,15 +7,15 @@ namespace Cosmos.Nancy.Extensions
     /// <summary>
     /// Response compression extensions
     /// </summary>
-    public static class ResponseCompressionExtensions
+    public static class ResponseConfigueExtensions
     {
         /// <summary>
         /// Use Compression Module
         /// </summary>
         /// <param name="pipelines"></param>
-        public static void UseResponseCompression(this IPipelines pipelines)
+        public static IPipelines UseResponseCompression(this IPipelines pipelines)
         {
-            UseResponseCompression(pipelines, null);
+            return UseResponseCompression(pipelines, null);
         }
 
         /// <summary>
@@ -23,9 +23,9 @@ namespace Cosmos.Nancy.Extensions
         /// </summary>
         /// <param name="pipelines"></param>
         /// <param name="optionAction"></param>
-        public static void UseResponseCompression(this IPipelines pipelines, Action<CompressionOptions> optionAction)
+        public static IPipelines UseResponseCompression(this IPipelines pipelines, Action<CompressionOptions> optionAction)
         {
-            if(pipelines == null)
+            if (pipelines == null)
             {
                 throw new ArgumentNullException(nameof(pipelines));
             }
@@ -44,6 +44,8 @@ namespace Cosmos.Nancy.Extensions
                 DeflateCompression.Options = options;
                 pipelines.AfterRequest += DeflateCompression.CheckForCompression;
             }
+
+            return pipelines;
         }
     }
 }

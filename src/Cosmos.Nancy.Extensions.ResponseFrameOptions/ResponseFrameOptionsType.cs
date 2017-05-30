@@ -3,7 +3,7 @@
     /// <summary>
     /// Response XFrame-Options Type
     /// </summary>
-    public enum ResponseFramesOptionsType
+    public enum ResponseFrameOptionsType
     {
         /// <summary>
         /// DENY

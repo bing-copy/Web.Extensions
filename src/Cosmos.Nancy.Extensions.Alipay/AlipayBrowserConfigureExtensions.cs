@@ -5,76 +5,78 @@ using Nancy.Bootstrapper;
 namespace Cosmos.Nancy.Extensions
 {
     /// <summary>
-    /// WeChat browser limited extensions
+    /// Alipay browser limited extensions
     /// </summary>
-    public static class WeChatBrowserLimitedExtensions
+    public static class AlipayBrowserConfigureExtensions
     {
         /// <summary>
-        /// Use wechat browser filter to a Nancy Bootstrap
+        /// Use alipay browser filter to a Nancy Bootstrap
         /// </summary>
         /// <param name="pipelines"></param>
-        public static void UseWeChatBrowserOnly(this IPipelines pipelines)
+        public static IPipelines UseAlipayBrowserOnly(this IPipelines pipelines)
         {
-            UseWeChatBrowserOnly(pipelines, null);
+            return UseAlipayBrowserOnly(pipelines, null);
         }
 
         /// <summary>
-        /// Use wechat browser filter to a Nancy Bootstrap
+        /// Use alipay browser filter to a Nancy Bootstrap
         /// </summary>
         /// <param name="pipelines"></param>
         /// <param name="optionAction"></param>
-        public static void UseWeChatBrowserOnly(this IPipelines pipelines, Action<WeChatBrowserOnlyOptions> optionAction)
+        public static IPipelines UseAlipayBrowserOnly(this IPipelines pipelines, Action<AlipayBrowserOnlyOptions> optionAction)
         {
             if (pipelines == null)
             {
                 throw new ArgumentNullException(nameof(pipelines));
             }
 
-            var options = new WeChatBrowserOnlyOptions();
+            var options = new AlipayBrowserOnlyOptions();
             optionAction?.Invoke(options);
 
             pipelines.BeforeRequest.AddItemToEndOfPipeline(ctx =>
             {
-                if (!Internal.RequestHelper.IsWeChatBrowser(ctx.Request))
+                if (!Internal.RequestHelper.IsAlipayBrowser(ctx.Request))
                 {
-                    return Internal.ResponseHelper.DoWeChatBrowserOnlyOption(ctx, options);
+                    return Internal.ResponseHelper.DoAlipayBrowserOnlyOption(ctx, options);
                 }
 
                 return null;
             });
+
+            return pipelines;
         }
 
         /// <summary>
-        /// Use wechat browser filter in a NancyController/NancyModule
+        /// Use alipay browser filter in a NancyController/NancyModule
         /// </summary>
         /// <param name="pipeline"></param>
         /// <returns></returns>
-        public static BeforePipeline UseWeChatBrowserOnly(this BeforePipeline pipeline)
+        public static BeforePipeline UseAlipayBrowserOnly(this BeforePipeline pipeline)
         {
-            return UseWeChatBrowserOnly(pipeline, null);
+            return UseAlipayBrowserOnly(pipeline, null);
         }
 
         /// <summary>
-        /// Use wechat browser filter in a NancyController/NancyModule
+        /// Use alipay browser filter in a NancyController/NancyModule
         /// </summary>
         /// <param name="pipeline"></param>
         /// <param name="optionAction"></param>
         /// <returns></returns>
-        public static BeforePipeline UseWeChatBrowserOnly(this BeforePipeline pipeline, Action<WeChatBrowserOnlyOptions> optionAction)
+        public static BeforePipeline UseAlipayBrowserOnly(this BeforePipeline pipeline, Action<AlipayBrowserOnlyOptions> optionAction)
         {
             if (pipeline == null)
             {
                 throw new ArgumentNullException(nameof(pipeline));
             }
 
-            var options = new WeChatBrowserOnlyOptions();
+            var options = new AlipayBrowserOnlyOptions();
             optionAction?.Invoke(options);
 
             pipeline.AddItemToEndOfPipeline(ctx =>
             {
-                if (!Internal.RequestHelper.IsWeChatBrowser(ctx.Request))
+                if (!Internal.RequestHelper.IsAlipayBrowser(ctx.Request))
                 {
-                    return Internal.ResponseHelper.DoWeChatBrowserOnlyOption(ctx, options);
+                    return Internal.ResponseHelper.DoAlipayBrowserOnlyOption(ctx, options);
                 }
 
                 return null;
