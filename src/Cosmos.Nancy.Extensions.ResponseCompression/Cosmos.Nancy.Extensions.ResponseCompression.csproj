@@ -6,7 +6,7 @@
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
     <AssemblyVersion>0.0.1</AssemblyVersion>
-    <Version>0.0.1-alpha1-10300</Version>
+    <Version>0.0.1-alpha1-10500</Version>
     <Authors>AlexLEWIS</Authors>
     <Company>StarrySky Foundation</Company>
     <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>

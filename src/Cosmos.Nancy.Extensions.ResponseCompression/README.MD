@@ -73,3 +73,10 @@ public class Bootstrapper : AutofacNancyBootstrapper
     }
 }
 ```
+
+
+that's all.
+
+* * *
+
+[MIT](https://mit-license.org/)

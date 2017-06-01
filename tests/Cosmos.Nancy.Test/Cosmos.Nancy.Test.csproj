@@ -14,5 +14,13 @@
     <PackageReference Include="Nancy" Version="2.0.0-clinteastwood" />
     <PackageReference Include="Nancy.Bootstrappers.Autofac" Version="2.0.0-clinteastwood" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cosmos.Nancy.Extensions.Alipay\Cosmos.Nancy.Extensions.Alipay.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Nancy.Extensions.AntiXss\Cosmos.Nancy.Extensions.AntiXss.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Nancy.Extensions.Cors\Cosmos.Nancy.Extensions.Cors.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Nancy.Extensions.ResponseCompression\Cosmos.Nancy.Extensions.ResponseCompression.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Nancy.Extensions.ResponseFrameOptions\Cosmos.Nancy.Extensions.ResponseFrameOptions.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Nancy.Extensions.WeChat\Cosmos.Nancy.Extensions.WeChat.csproj" />
+  </ItemGroup>
 
 </Project>
