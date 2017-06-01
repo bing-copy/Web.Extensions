@@ -27,6 +27,8 @@ public class HomeModule : NancyModule
 }
 ```
 
+enter this url `http://localhost:61626/home/antixss?Parameters=1|<script>alert('1');</script>|123` in your browser's address bar,
+
 as result
 
 ``` txt
