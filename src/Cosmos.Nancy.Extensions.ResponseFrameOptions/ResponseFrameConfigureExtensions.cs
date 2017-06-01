@@ -1,4 +1,5 @@
 ﻿using System;
+using Nancy;
 using Nancy.Bootstrapper;
 
 namespace Cosmos.Nancy.Extensions
@@ -42,6 +43,46 @@ namespace Cosmos.Nancy.Extensions
             }
 
             pipelines.AfterRequest.AddItemToEndOfPipeline(ctx => Internal.ResponseHelper.UpdateHeader(ctx, type, domain));
+
+            return pipelines;
+        }
+
+        /// <summary>
+        /// Use Response XFrame-Options Pipelines
+        /// </summary>
+        /// <param name="pipelines"></param>
+        /// <returns></returns>
+        public static AfterPipeline UseResponseFrameOptions(this AfterPipeline pipelines)
+        {
+            return UseResponseFrameOptions(pipelines, ResponseFrameOptionsType.DENY, string.Empty);
+        }
+
+        /// <summary>
+        /// Use Response XFrame-Options Pipelines
+        /// </summary>
+        /// <param name="pipelines"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static AfterPipeline UseResponseFrameOptions(this AfterPipeline pipelines, ResponseFrameOptionsType type)
+        {
+            return UseResponseFrameOptions(pipelines, type, string.Empty);
+        }
+
+        /// <summary>
+        /// Use Response XFrame-Options Pipelines
+        /// </summary>
+        /// <param name="pipelines"></param>
+        /// <param name="type"></param>
+        /// <param name="domain"></param>
+        /// <returns></returns>
+        public static AfterPipeline UseResponseFrameOptions(this AfterPipeline pipelines, ResponseFrameOptionsType type, string domain)
+        {
+            if (pipelines == null)
+            {
+                throw new ArgumentNullException(nameof(pipelines));
+            }
+
+            pipelines.AddItemToEndOfPipeline(ctx => Internal.ResponseHelper.UpdateHeader(ctx, type, domain));
 
             return pipelines;
         }
