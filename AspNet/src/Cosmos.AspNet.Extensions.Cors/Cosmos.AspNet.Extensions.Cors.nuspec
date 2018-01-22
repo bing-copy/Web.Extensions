@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>0.0.1-alpha1-10701</version>
+    <title>$title$</title>
+    <authors>AlexLEWIS</authors>
+    <owners>AlexLEWIS</owners>
+    <licenseUrl>https://mit-license.org/</licenseUrl>
+    <projectUrl>http://github.com/cosmosprogramme/aspnet.extensions</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>CORS extensions for ASP.NET</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <tags>Cosmos AspNet Extensions</tags>
+
+    <dependencies>
+      <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <Copyright />
+    <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/CosmosProgramme/AspNetCore.Extensions</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>AlexLEWIS</Authors>
+    <Company>StarrySky Foundation</Company>
+    <Version>0.0.1-alpha1-10701</Version>
+    <RootNamespace>Cosmos.AspNetCore.Extensions</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.6.1\.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cosmos.Extensions.Html.HtmlAgilityPack" Version="0.0.1-alpha1-10220" />
+    <PackageReference Include="HtmlSanitizer" Version="3.5.169-beta" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+  </ItemGroup>
+
+</Project>

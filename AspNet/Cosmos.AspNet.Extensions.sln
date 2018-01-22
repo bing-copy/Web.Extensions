@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Extensions.WeChat", "src\Cosmos.AspNet.Extensions.WeChat\Cosmos.AspNet.Extensions.WeChat.csproj", "{39C89ED4-AB1F-49B0-A2D1-4CDC74E0EEBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Extensions.Alipay", "src\Cosmos.AspNet.Extensions.Alipay\Cosmos.AspNet.Extensions.Alipay.csproj", "{6D827D8F-1F2D-40EB-A2F4-E423ACAB0AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Extensions.ResponseCompression", "src\Cosmos.AspNet.Extensions.ResponseCompression\Cosmos.AspNet.Extensions.ResponseCompression.csproj", "{6A08AAD2-D6E1-433C-9E43-EBFA76796088}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7ABE2EC8-BD34-4A4C-926A-6B27A3EDA5A3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		NuGet.config = NuGet.config
+		Publish.bat = Publish.bat
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Extensions.ResponseFrameOptions", "src\Cosmos.AspNet.Extensions.ResponseFrameOptions\Cosmos.AspNet.Extensions.ResponseFrameOptions.csproj", "{D6F16F4D-5C76-42BC-86EB-A43716E4031E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Extensions.Cors", "src\Cosmos.AspNet.Extensions.Cors\Cosmos.AspNet.Extensions.Cors.csproj", "{40CD95C4-C71E-4798-9B9B-44918C611C0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F1DAC636-224C-4CAD-8ACE-38A3C3654605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Extensions.AntiXss", "src\Cosmos.AspNet.Extensions.AntiXss\Cosmos.AspNet.Extensions.AntiXss.csproj", "{A528C8C6-FEE5-4587-99E2-14F367F288C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Test", "tests\Cosmos.AspNet.Test\Cosmos.AspNet.Test.csproj", "{AC7A67D4-5DF1-4221-8574-A05407F6FDF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Extensions.HttpActionResults", "src\Cosmos.AspNet.Extensions.HttpActionResults\Cosmos.AspNet.Extensions.HttpActionResults.csproj", "{EC72CA56-D862-452E-9760-50AA4421E4A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNet.Extensions.Common", "src\Cosmos.AspNet.Extensions.Common\Cosmos.AspNet.Extensions.Common.csproj", "{F088E7A2-0C44-419A-8F64-D10F7507D39D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39C89ED4-AB1F-49B0-A2D1-4CDC74E0EEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C89ED4-AB1F-49B0-A2D1-4CDC74E0EEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C89ED4-AB1F-49B0-A2D1-4CDC74E0EEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C89ED4-AB1F-49B0-A2D1-4CDC74E0EEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D827D8F-1F2D-40EB-A2F4-E423ACAB0AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D827D8F-1F2D-40EB-A2F4-E423ACAB0AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D827D8F-1F2D-40EB-A2F4-E423ACAB0AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D827D8F-1F2D-40EB-A2F4-E423ACAB0AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A08AAD2-D6E1-433C-9E43-EBFA76796088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A08AAD2-D6E1-433C-9E43-EBFA76796088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A08AAD2-D6E1-433C-9E43-EBFA76796088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A08AAD2-D6E1-433C-9E43-EBFA76796088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F16F4D-5C76-42BC-86EB-A43716E4031E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F16F4D-5C76-42BC-86EB-A43716E4031E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F16F4D-5C76-42BC-86EB-A43716E4031E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F16F4D-5C76-42BC-86EB-A43716E4031E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40CD95C4-C71E-4798-9B9B-44918C611C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40CD95C4-C71E-4798-9B9B-44918C611C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40CD95C4-C71E-4798-9B9B-44918C611C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40CD95C4-C71E-4798-9B9B-44918C611C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A528C8C6-FEE5-4587-99E2-14F367F288C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A528C8C6-FEE5-4587-99E2-14F367F288C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A528C8C6-FEE5-4587-99E2-14F367F288C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A528C8C6-FEE5-4587-99E2-14F367F288C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC7A67D4-5DF1-4221-8574-A05407F6FDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7A67D4-5DF1-4221-8574-A05407F6FDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7A67D4-5DF1-4221-8574-A05407F6FDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7A67D4-5DF1-4221-8574-A05407F6FDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC72CA56-D862-452E-9760-50AA4421E4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC72CA56-D862-452E-9760-50AA4421E4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC72CA56-D862-452E-9760-50AA4421E4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC72CA56-D862-452E-9760-50AA4421E4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F088E7A2-0C44-419A-8F64-D10F7507D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F088E7A2-0C44-419A-8F64-D10F7507D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F088E7A2-0C44-419A-8F64-D10F7507D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F088E7A2-0C44-419A-8F64-D10F7507D39D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39C89ED4-AB1F-49B0-A2D1-4CDC74E0EEBB} = {1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}
+		{6D827D8F-1F2D-40EB-A2F4-E423ACAB0AFC} = {1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}
+		{6A08AAD2-D6E1-433C-9E43-EBFA76796088} = {1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}
+		{D6F16F4D-5C76-42BC-86EB-A43716E4031E} = {1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}
+		{40CD95C4-C71E-4798-9B9B-44918C611C0B} = {1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}
+		{A528C8C6-FEE5-4587-99E2-14F367F288C6} = {1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}
+		{AC7A67D4-5DF1-4221-8574-A05407F6FDF5} = {F1DAC636-224C-4CAD-8ACE-38A3C3654605}
+		{EC72CA56-D862-452E-9760-50AA4421E4A8} = {1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}
+		{F088E7A2-0C44-419A-8F64-D10F7507D39D} = {1B801E1D-2E8D-42B1-9C9B-202EFA12FB73}
+	EndGlobalSection
+EndGlobal
