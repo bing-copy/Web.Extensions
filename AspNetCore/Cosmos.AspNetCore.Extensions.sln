@@ -28,6 +28,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.AspNetCore.Test", "t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNetCore.Extensions.HttpActionResults", "src\Cosmos.AspNetCore.Extensions.HttpActionResults\Cosmos.AspNetCore.Extensions.HttpActionResults.csproj", "{678C5F63-0294-4E83-8182-0105D36A08C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.AspNetCore.Extensions.HttpMultipartRequest", "src\Cosmos.AspNetCore.Extensions.HttpMultipartRequest\Cosmos.AspNetCore.Extensions.HttpMultipartRequest.csproj", "{52910F36-80B2-4ADA-8DC9-1D9E8619F0C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{678C5F63-0294-4E83-8182-0105D36A08C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{678C5F63-0294-4E83-8182-0105D36A08C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678C5F63-0294-4E83-8182-0105D36A08C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52910F36-80B2-4ADA-8DC9-1D9E8619F0C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52910F36-80B2-4ADA-8DC9-1D9E8619F0C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52910F36-80B2-4ADA-8DC9-1D9E8619F0C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52910F36-80B2-4ADA-8DC9-1D9E8619F0C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +75,6 @@ Global
 		{4831CAC7-667C-4A6D-A80C-A63352844FD8} = {8B1CCD22-8933-4DB4-8CD9-5807E55C8367}
 		{255DE0BD-EF26-492A-99F3-C4A2F2054DEC} = {93943ECC-FE21-4DEE-9562-952A7B7E1218}
 		{678C5F63-0294-4E83-8182-0105D36A08C8} = {8B1CCD22-8933-4DB4-8CD9-5807E55C8367}
+		{52910F36-80B2-4ADA-8DC9-1D9E8619F0C7} = {8B1CCD22-8933-4DB4-8CD9-5807E55C8367}
 	EndGlobalSection
 EndGlobal

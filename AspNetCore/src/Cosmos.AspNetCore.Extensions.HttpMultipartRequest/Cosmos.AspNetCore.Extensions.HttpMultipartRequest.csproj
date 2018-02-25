@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/CosmosProgramme/AspNetCore.Extensions</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>AlexLEWIS</Authors>
+    <Company>StarrySky Foundation</Company>
+    <Version>0.0.1-alpha1-10701</Version>
+    <RootNamespace>Cosmos.AspNetCore.Extensions</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.2" />
+  </ItemGroup>
+</Project>
