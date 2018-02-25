@@ -1,12 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
-      <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
-    <AssemblyVersion>0.0.1</AssemblyVersion>
-    <Copyright />
     <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/CosmosProgramme/AspNetCore.Extensions</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
@@ -15,8 +11,7 @@
     <Version>0.0.1-alpha1-10701</Version>
     <RootNamespace>Cosmos.AspNetCore.Extensions</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.0.2" />
   </ItemGroup>
 </Project>
