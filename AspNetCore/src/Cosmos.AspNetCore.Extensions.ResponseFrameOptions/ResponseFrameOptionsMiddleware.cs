@@ -2,13 +2,11 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace Cosmos.AspNetCore.Extensions
-{
+namespace Cosmos.AspNetCore.Extensions {
     /// <summary>
     /// Response XFrame-Options Middleware
     /// </summary>
-    public class ResponseFrameOptionsMiddleware
-    {
+    public class ResponseFrameOptionsMiddleware {
         private readonly RequestDelegate _next;
         private readonly ResponseFrameOptionsType _type;
         private readonly string _domain;
@@ -19,8 +17,7 @@ namespace Cosmos.AspNetCore.Extensions
         /// <param name="next"></param>
         /// <param name="type"></param>
         /// <param name="domain"></param>
-        public ResponseFrameOptionsMiddleware(RequestDelegate next, ResponseFrameOptionsType type, string domain)
-        {
+        public ResponseFrameOptionsMiddleware(RequestDelegate next, ResponseFrameOptionsType type, string domain) {
             _next = next ?? throw new ArgumentNullException(nameof(next));
             _type = type;
             _domain = domain;
@@ -31,10 +28,8 @@ namespace Cosmos.AspNetCore.Extensions
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
-        public async Task Invoke(HttpContext context)
-        {
-            if (context == null)
-            {
+        public async Task Invoke(HttpContext context) {
+            if (context == null) {
                 throw new ArgumentNullException(nameof(context));
             }
 

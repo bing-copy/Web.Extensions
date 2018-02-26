@@ -1,12 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Cosmos.AspNetCore.Extensions
-{
+namespace Cosmos.AspNetCore.Extensions {
     /// <summary>
     /// Response XFrame-Options Attribute
     /// </summary>
-    public class FrameOptionsAttribute : ActionFilterAttribute
-    {
+    public class FrameOptionsAttribute : ActionFilterAttribute {
         /// <summary>
         /// XFrame-Options Type
         /// </summary>
@@ -21,8 +19,7 @@ namespace Cosmos.AspNetCore.Extensions
         /// On result executing
         /// </summary>
         /// <param name="context"></param>
-        public override void OnResultExecuting(ResultExecutingContext context)
-        {
+        public override void OnResultExecuting(ResultExecutingContext context) {
             Internal.ResponseHelper.UpdateHeader(context.HttpContext, FrameOptions, Domain);
         }
     }

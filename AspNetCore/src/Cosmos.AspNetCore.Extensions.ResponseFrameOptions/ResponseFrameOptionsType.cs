@@ -1,11 +1,9 @@
-﻿namespace Cosmos.AspNetCore.Extensions
-{
+﻿namespace Cosmos.AspNetCore.Extensions {
     /// <summary>
     /// Response XFrame-Options Type
     /// </summary>
     /// ReSharper disable InconsistentNaming
-    public enum ResponseFrameOptionsType
-    {
+    public enum ResponseFrameOptionsType {
         /// <summary>
         /// DENY
         /// </summary>

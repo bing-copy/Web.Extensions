@@ -1,10 +1,8 @@
-﻿namespace Cosmos.AspNetCore.Extensions.Internal
-{
+﻿namespace Cosmos.AspNetCore.Extensions.Internal {
     /// <summary>
     /// X-FramesOptions Constants
     /// </summary>
-    public static class FrameOptionsConstants
-    {
+    public static class FrameOptionsConstants {
         /// <summary>
         /// X-Frame-Options
         /// </summary>
