@@ -58,12 +58,8 @@
     <PackageReference Include="Cosmos.Extensions.Html.HtmlAgilityPack">
       <Version>0.0.1-alpha1-10220</Version>
     </PackageReference>
-    <PackageReference Include="HtmlSanitizer">
-      <Version>3.5.169-beta</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AspNet.Mvc">
-      <Version>5.2.3</Version>
-    </PackageReference>
+    <PackageReference Include="HtmlSanitizer" Version="4.0.183" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Cosmos.AspNet.Extensions.AntiXss.nuspec" />

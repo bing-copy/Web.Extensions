@@ -78,11 +78,6 @@
     <Compile Include="UseProxyResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.Mvc">
-      <Version>5.2.3</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Cosmos.AspNet.Extensions.HttpActionResults.nuspec">
       <SubType>Designer</SubType>
     </None>
@@ -92,6 +87,9 @@
       <Project>{f088e7a2-0c44-419a-8f64-d10f7507d39d}</Project>
       <Name>Cosmos.AspNet.Extensions.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
