@@ -29,5 +29,10 @@
         /// Content-Encoding
         /// </summary>
         public static readonly string ContentEncoding = "Content-Encoding";
+
+        /// <summary>
+        /// Content-Type
+        /// </summary>
+        public static readonly string ContentType = "Content-Type";
     }
 }
