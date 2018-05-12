@@ -6,6 +6,8 @@ Include
 + [Cosmos.AspNetCore.Extensions.WeChat](src/Cosmos.AspNAspNetCoreet.Extensions.WeChat/README.MD)
 + [Cosmos.AspNetCore.Extensions.AntiXss](src/Cosmos.AspNetCore.Extensions.AntiXss/README.MD)
 + [Cosmos.AspNetCore.Extensions.HttpActionResults](src/Cosmos.AspNetCore.Extensions.HttpActionResults/README.MD)
++ [Cosmos.AspNetCore.Extensions.HttpMultipartRequest](src/Cosmos.AspNetCore.Extensions.HttpMultipartRequest/README.MD)
++ [Cosmos.AspNetCore.Extensions.ResponseCompression](src/Cosmos.AspNetCore.Extensions.ResponseCompression/README.MD)
 + [Cosmos.AspNetCore.Extensions.ResponseFrameOptions](src/Cosmos.AspNetCore.Extensions.ResponseFrameOptions/README.MD)
 
 * * *

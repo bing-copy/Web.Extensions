@@ -4,7 +4,8 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/CosmosProgramme/AspNetCore.Extensions</PackageProjectUrl>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/25580633?s=200</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/CosmosLoops/Web.Extensions</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <Authors>AlexLEWIS</Authors>
     <Company>StarrySky Foundation</Company>

@@ -8,3 +8,7 @@
 + [Cosmos.Nancy.Extensions.Cors](src/Cosmos.Nancy.Extensions.Cors/README.MD)
 + [Cosmos.Nancy.Extensions.ResponseCompression](src/Cosmos.Nancy.Extensions.ResponseCompression/README.MD)
 + [Cosmos.Nancy.Extensions.ResponseFrameOptions](src/Cosmos.Nancy.Extensions.ResponseFrameOptions/README.MD)
+
+* * *
+
+[MIT](https://mit-license.org/)
